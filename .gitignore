@@ -1,0 +1,43 @@
+# Compiled Java Classes & Binaries
+*.class
+bin/
+target/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# But keep project lib directory jars for standalone out-of-the-box execution!
+!lib/*.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Visual Studio Code
+.vscode/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Legacy Python virtual environments if any
+legacy_python_version/.venv*/
+legacy_python_version/**/__pycache__/

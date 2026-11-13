@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise – Personal Expense Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366f1'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z'/></svg>">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-wrapper">
+            <!-- Brand Header -->
+            <div class="brand-header">
+                <div class="brand-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                </div>
+                <h1 class="brand-title">SpendWise</h1>
+                <p class="brand-subtitle">Personal Expense Management System</p>
+                <div style="margin-top: 8px; display: flex; gap: 6px; justify-content: center; flex-wrap: wrap;">
+                    <span style="font-size: 10px; background: rgba(99,102,241,0.2); color: #a5b4fc; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Core Java</span>
+                    <span style="font-size: 10px; background: rgba(16,185,129,0.2); color: #6ee7b7; padding: 2px 6px; border-radius: 4px; font-weight: 600;">OOP Pillars</span>
+                    <span style="font-size: 10px; background: rgba(14,165,233,0.2); color: #7dd3fc; padding: 2px 6px; border-radius: 4px; font-weight: 600;">JDBC & MySQL</span>
+                </div>
+            </div>
+
+            <!-- Tab Switcher -->
+            <div class="auth-tabs">
+                <button type="button" class="auth-tab-btn active" id="tab-login">Sign In</button>
+                <button type="button" class="auth-tab-btn" id="tab-register">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="form-login">
+                <div class="form-group">
+                    <label class="form-label" for="login-email">Email Address</label>
+                    <input type="email" id="login-email" class="form-control" placeholder="user@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="login-password">Password</label>
+                    <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/>
+                    </svg>
+                    Sign In to Dashboard
+                </button>
+            </form>
+
+            <!-- Register Form (Hidden by default) -->
+            <form id="form-register" style="display: none;">
+                <div class="form-group">
+                    <label class="form-label" for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" class="form-control" placeholder="Suchismita Saha" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" class="form-control" placeholder="suchismita@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="reg-password">Password (min 6 characters)</label>
+                    <input type="password" id="reg-password" class="form-control" placeholder="••••••••" minlength="6" required>
+                </div>
+                <button type="submit" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="8.5" cy="7" r="4"/>
+                        <line x1="20" y1="8" x2="20" y2="14"/>
+                        <line x1="23" y1="11" x2="17" y2="11"/>
+                    </svg>
+                    Create Free Account
+                </button>
+            </form>
+
+            <!-- Instant Demo Login Helper -->
+            <div class="demo-box">
+                <div>
+                    <strong>Quick Evaluator Demo</strong><br>
+                    <span style="font-size: 11px;">demo@spendwise.com / password123</span>
+                </div>
+                <button type="button" id="btn-fill-demo" class="demo-fill-btn">1-Click Fill</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
